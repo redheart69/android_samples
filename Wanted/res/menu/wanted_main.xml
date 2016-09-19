@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_item_preview"
+        android:icon="@drawable/icon_preview"
+        android:showAsAction="always"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/action_item_share"
+        android:icon="@drawable/icon_share"
+        android:showAsAction="always"
+        android:visible="true">
+    </item>
+</menu>
