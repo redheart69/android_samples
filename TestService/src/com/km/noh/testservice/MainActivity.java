@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
 	private void updateView(){
 		String state = isServiceRunning() ? "실행중" : "중지됨";
 		mTvRunningState.setText("서비스 상태 : "+state);
-		
+		//ㅎㅎㅎ
 	}
 	
 	private boolean isServiceRunning() {
