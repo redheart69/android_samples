@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="app_name">ImageLoader Demo</string>
+  <string name="long_list">Long List</string>
+  <string name="long_small_list">Long Small Image List</string>
+  <string name="large_list">Large Images</string>
+  <string name="direct_loader">Direct Loader</string>
+
+  <string name="long_list_animated">Long List With Animated</string>
+  <string name="long_grid_list_animated">Long Grid List With Animated</string>
+  <string name="long_small_list_animated">Long Small Image List Animated</string>
+  <string name="long_small_grid_list_animated">Long Small Grid Image List Animated</string>
+  <string name="large_list_animated">Large Images Animated</string>
+  <string name="direct_loader_animated">Direct Loader Animated</string>
+
+  <string name="notify_dataset">Notify dataset</string>
+  <string name="cache_only">Use cache only</string>
+  <string name="turn_off_cache_only">Turn off cache only</string>
+</resources>

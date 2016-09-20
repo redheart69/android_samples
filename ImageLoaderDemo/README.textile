@@ -1,0 +1,51 @@
+h1. ImageLoader demo
+
+ImageLoader provides a demo application so that you can quickly see potential use cases for the imageLoader library 
+
+"Install the ImageLoader application":https://play.google.com/store/apps/details?id=com.novoda.imageloader.demo
+
+h2. Examples
+
+Generally a good way to use the imageLoader is to initialize an instance in the Application class and keep a static reference that can be accessed from every part of the app.
+
+<pre><code>
+private static ImageManager imageManager;
+
+@Override
+public void onCreate() {
+    super.onCreate();
+	normalImageManagerSettings();
+}
+
+private void normalImageManagerSettings() {
+    imageManager = new ImageManager(this, new SettingsBuilder()
+        .withCacheManager(new LruBitmapCache(this)).build(this));
+}
+</code></pre>
+
+h3. Long list of images
+
+
+h3. Long list of small images
+
+
+h3. Big images
+
+This activity is to demo the stability with very big images.
+
+h3. Direct Loading
+
+If you don't want to use the async feature of the image loader, but you don't want to set up a HttpClient or a UrlConnection to get the image, you can use the ImageLoader library to do it.
+
+<pre><code>
+import com.novoda.imageloader.core.util.DirectLoader;
+
+DirectLoader dl = new DirectLoader();
+Bitmap b = dl.download("http://www.asianweek.com/wp-content/uploads/2012/03/microsoft_logo11.jpg");
+</code></pre>
+
+This functionality should be used carefully as interface may change in the next few releases and outside of the main thread.  
+
+h3. Gallery Demo
+
+Work in progress...
