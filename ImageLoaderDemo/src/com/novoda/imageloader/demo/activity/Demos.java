@@ -16,10 +16,8 @@ import com.novoda.imageloader.demo.util.BugsenseApiKeyFailedException;
  * Nothing really interesting here just a dashboard.
  */
 public class Demos extends Activity implements OnItemClickListener {
-
     private static final boolean LIST_VIEW = false;
     private static final boolean GRID_VIEW = true;
-
     private BugSenseHelper bugsenseHelper;
     private final int fadeIn = R.anim.fade_in;
 
